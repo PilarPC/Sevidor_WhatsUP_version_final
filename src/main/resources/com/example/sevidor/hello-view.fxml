@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="331.0" prefWidth="341.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sevidor.HelloController">
+   <children>
+      <ScrollPane prefHeight="331.0" prefWidth="341.0">
+         <content>
+            <VBox fx:id="vbMensajes" prefHeight="330.0" prefWidth="325.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>
