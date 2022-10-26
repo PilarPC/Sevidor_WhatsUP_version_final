@@ -38,6 +38,8 @@ public class HelloController implements Runnable {
                     //txt_recibido.setText(mensaje);
                     vbMensajes.getChildren().add(new Label(paqueteRecibido.getEmisor()+ ": " + paqueteRecibido.getMensaje() +paqueteRecibido.getpPuertoR()+ "\n"));
                 });
+
+                //Envio paquete
                 Socket Socketcliente = new Socket(IP, paqueteRecibido.getpPuertoR());
                 ObjectOutputStream paqueteSalida =  new ObjectOutputStream(Socketcliente.getOutputStream());
                 paqueteSalida.writeObject(paqueteRecibido);
